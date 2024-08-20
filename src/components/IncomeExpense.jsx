@@ -34,11 +34,11 @@ function IncomeExpense() {
     <div className="inc-exp-container">
       <div>
         <h4>Income</h4>
-        <p id="money-plus" className="money plus">+${income.toFixed()}</p>
+        <p id="money-plus" className="money plus">+₹{income.toFixed()}</p>
       </div>
       <div>
         <h4>Expense</h4>
-        <p id="money-minus" className="money minus">-${expense.toFixed()}</p>
+        <p id="money-minus" className="money minus">-₹{expense.toFixed()}</p>
       </div>
     </div>
   );

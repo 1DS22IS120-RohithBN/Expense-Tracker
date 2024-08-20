@@ -24,14 +24,14 @@ body {
 .container {
   margin: 30px auto;
   width: 400px;
-  
 }
 
 h1 {
   letter-spacing: 1px;
   margin: 0;
 }
-h2{
+
+h2 {
   text-align: center;
 }
 
@@ -106,6 +106,40 @@ input[type='number'] {
   width: 100%;
 }
 
+.btn2 {
+  cursor: pointer;
+  background-color: #41c43f;
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn2:hover {
+  background-color: #3e8e41;
+}
+
+.btn3:hover {
+  background-color: #c0392b;
+}
+
+.btn3 {
+  cursor: pointer;
+  background-color: #e23f3f;
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+}
+
 .btn:focus,
 .delete-btn:focus {
   outline: 0;
@@ -155,3 +189,156 @@ input[type='number'] {
 .list li:hover .delete-btn {
   opacity: 1;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Slightly smaller font size for medium screens */
+  }
+
+  .container {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .inc-exp-container {
+    flex-direction: column;
+  }
+
+  .inc-exp-container > div {
+    margin-bottom: 10px;
+  }
+
+  .inc-exp-container > div:first-of-type {
+    border-right: none;
+  }
+
+  .btn, .btn2, .btn3 {
+    font-size: 14px; /* Slightly smaller buttons for medium screens */
+    padding: 8px;
+  }
+
+  input[type='text'], input[type='number'] {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px; /* Smaller font size for small screens */
+  }
+
+  .container {
+    padding: 10px;
+    margin: 10px auto;
+  }
+
+  .inc-exp-container {
+    padding: 10px;
+  }
+
+  .btn, .btn2, .btn3 {
+    font-size: 12px; /* Smaller buttons for small screens */
+    padding: 6px;
+  }
+
+  input[type='text'], input[type='number'] {
+    font-size: 12px;
+    padding: 6px;
+  }
+}
+
+
+
+/* Income.css */
+.income-container {
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.income-container input,
+.income-container button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .income-container {
+    padding: 15px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .income-container {
+    padding: 10px;
+  }
+
+  .income-container input,
+  .income-container button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+/* Additional styles for delete animation */
+
+.list-item {
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  transform-origin: right center;
+}
+
+.list-item.deleting {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+/* Ensure that list items are positioned relatively for animation */
+.list li {
+  position: relative;
+}
+
+/* Income.css (add these styles) */
+.income-container {
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.income-container input,
+.income-container button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .income-container {
+    padding: 15px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .income-container {
+    padding: 10px;
+  }
+
+  .income-container input,
+  .income-container button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
