@@ -197,6 +197,7 @@ input[type='number'] {
   }
 
   .container {
+    width:350px;
     padding: 15px;
     margin: 20px auto;
   }
@@ -232,6 +233,7 @@ input[type='number'] {
   .container {
     padding: 10px;
     margin: 10px auto;
+    width:300px;
   }
 
   .inc-exp-container {
