@@ -215,7 +215,7 @@ input[type='number'] {
   }
 
   .btn, .btn2, .btn3 {
-    font-size: 14px; /* Slightly smaller buttons for medium screens */
+    font-size: 18px; /* Slightly smaller buttons for medium screens */
     padding: 8px;
   }
 
@@ -227,7 +227,7 @@ input[type='number'] {
 
 @media (max-width: 480px) {
   body {
-    font-size: 12px; /* Smaller font size for small screens */
+    font-size: 13px; /* Smaller font size for small screens */
   }
 
   .container {
@@ -241,7 +241,7 @@ input[type='number'] {
   }
 
   .btn, .btn2, .btn3 {
-    font-size: 12px; /* Smaller buttons for small screens */
+    font-size: 15px; /* Smaller buttons for small screens */
     padding: 6px;
   }
 
